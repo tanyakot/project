@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Teacher{% endblock %}
+
+{% block body %}
+    <h1>Преподаватель</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Имя</th>
+                <td>{{ teacher.name }}</td>
+            </tr>
+            <tr>
+                <th>Фамилия</th>
+                <td>{{ teacher.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Отчество</th>
+                <td>{{ teacher.surname }}</td>
+            </tr>
+            <tr>
+                <th>Дата рождения</th>
+                <td>{{ teacher.bithday ? teacher.bithday|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Телефон</th>
+                <td>{{ teacher.phone }}</td>
+            </tr>
+            <tr>
+                <th>Город</th>
+                <td>{{ teacher.city }}</td>
+            </tr>
+            <tr>
+                <th>Адрес</th>
+                <td>{{ teacher.adress }}</td>
+            </tr>
+            <tr>
+                <th>Запись создана</th>
+                <td>{{ teacher.createdAt ? teacher.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+            <tr>
+                <th>Трудовая книжка</th>
+                <td>{{ teacher.teacherId }}</td>
+            </tr>
+                <th>Кафедра</th>
+                <td>{{ teacher.department }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ teacher.email }}</td>
+            </tr>
+            <tr>
+                <th>Фото</th>
+                <td><img src="/web/uploads/teacher/{{ teacher.photo }}" width="100" height="100" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('teacher_index') }}">Назад к списку</a>
+
+    <a href="{{ path('teacher_edit', {'id': teacher.id}) }}">Редактировать</a>
+
+    {{ include('teacher/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Создать расписание{% endblock %}
+
+{% block body %}
+    <h1>Создать расписание</h1>
+
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+
+{#    <div class="field-box">#}
+{#        {% block collection_widget %}#}
+{#            {% spaceless %}#}
+{#                {% if prototype is defined %}#}
+{#                    {% set attr = attr|merge({'data-prototype': form_row(prototype)}) %}#}
+{#                    {% set attr = attr|merge({'data-prototype-name': prototype.vars.name}) %}#}
+{#                {% endif %}#}
+{#                {% set attr = attr|merge({'data-allow-add': allow_add ? 1 : 0}) %}#}
+{#                {% set attr = attr|merge({'data-allow-remove': allow_delete ? 1 : 0 }) %}#}
+{#                {% set attr = attr|merge({'data-name-prefix': full_name}) %}#}
+{#                {{ block('form_widget') }}#}
+{#            {% endspaceless %}#}
+{#        {% endblock collection_widget %}#}
+{#        {% form_theme form 'ProbankerControlpanelBundle:template:jquery.collection.html.twig' %}#}
+{#        {{ form.w }}#}
+{#    </div>#}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_end(form) }}
+    {#    {{ include('teacher/_form.html.twig', {'button_label': 'Update'}) }}#}
+
+{#    <a href="{{ path('teacher_index') }}">back to list</a>#}
+{##}
+{#    {{ include('teacher/_delete_form.html.twig') }}#}
+{% endblock %}

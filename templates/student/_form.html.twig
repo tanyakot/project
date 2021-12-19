@@ -1,0 +1,85 @@
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+
+{#{{ form(form) }}#}
+
+{#<table class="table">#}
+{#    <tbody>#}
+{#    <tr>#}
+{#        <th>Id</th>#}
+{#        <td>{{ student.id }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Email</th>#}
+{#        <td>{{ student.email }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Roles</th>#}
+{#        <td>{{ student.roles ? student.roles|json_encode : '' }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Password</th>#}
+{#        <td>{{ student.password }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Name</th>#}
+{#        <td>{{ student.name }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>LastName</th>#}
+{#        <td>{{ student.lastName }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Surname</th>#}
+{#        <td>{{ student.surname }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Bithday</th>#}
+{#        <td>{{ student.bithday ? student.bithday|date('Y-m-d') : '' }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Phone</th>#}
+{#        <td>{{ student.phone }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>City</th>#}
+{#        <td>{{ student.city }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Adress</th>#}
+{#        <td>{{ student.adress }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>CreatedAt</th>#}
+{#        <td>{{ student.createdAt ? student.createdAt|date('Y-m-d H:i:s') : '' }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>Course</th>#}
+{#        <td>{{ student.course }}</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th>NumberGroup</th>#}
+{#        <td>{{ student.numberGroup }}</td>#}
+{#    </tr>#}
+{#    </tbody>#}
+{#</table>#}
+
+
+{#<div class="field-box">#}
+{#    {{ form_label(form.name, 'Имя') }}#}
+{#    {{ form_widget(form.name, {"attr": {"class": "span8"}}) }}#}
+{#    {{ form_errors(form.name) }}#}
+{#</div>#}
+{#<div class="field-box">#}
+{#    {{ form_label(form.description, 'Описание') }}#}
+{#    {{ form_widget(form.description, {"attr": {"class": "span8"}}) }}#}
+{#    {{ form_errors(form.description) }}#}
+{#</div>#}
+{#<div class="field-box">#}
+{#    {{ form_label(form.code_color, 'Цвет') }}#}
+{#    {{ form_widget(form.code_color, {"attr": {"class": "span8"}}) }}#}
+{#    {{ form_errors(form.code_color) }}#}
+{#    <div class="tip muted">Пример: #E65F54.</div>#}
+{#</div>#}

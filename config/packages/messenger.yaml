@@ -1,0 +1,43 @@
+#framework:
+#  messenger:
+#        buses:
+##          messenger.bus.default:
+##            middleware:
+##              - App\Messenger\AuditMiddleware
+#        # Uncomment this (and the failed transport below) to send failed messages to this transport for later handling.
+##         failure_transport: failed
+#          event.bus: ~
+#          messenger.bus.default:
+#            middleware:
+#              - App\Messenger\AuditMiddleware
+#        default_bus: messenger.bus.default
+#
+#        transports:
+#            # https://symfony.com/doc/current/messenger.html#transport-configuration
+#             async: '%env(MESSENGER_TRANSPORT_DSN)%'
+#
+#             async_priority_high:
+#               dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+#               options:
+#                 queue_name: high
+#                 exchange:
+#                   name: messages_high_priority
+#                   queues:
+#                     messages_high: ~
+##options:
+##  exchange:
+##    name: messages_high_priority
+##  queues:
+##    messages_high: ~
+#             failed: 'doctrine://default?queue_name=failed'
+#            # sync: 'sync://'
+##              async:
+##              dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+##                retry_strategy:
+##                delay: 2000
+#        routing:
+#            # Route your messages to the transports
+#            'App\Message\ArticleMessage': async_priority_high
+#            'App\Message\Event\TestEvent': async
+
+

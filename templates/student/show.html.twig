@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Student{% endblock %}
+
+{% block body %}
+    <h1>Студент</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Имя</th>
+                <td>{{ student.name }}</td>
+            </tr>
+            <tr>
+                <th>Фамилия</th>
+                <td>{{ student.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Отчество</th>
+                <td>{{ student.surname }}</td>
+            </tr>
+            <tr>
+                <th>Дата рождения</th>
+                <td>{{ student.bithday ? student.bithday|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Телефон</th>
+                <td>{{ student.phone }}</td>
+            </tr>
+            <tr>
+                <th>Город</th>
+                <td>{{ student.city }}</td>
+            </tr>
+            <tr>
+                <th>Адрес</th>
+                <td>{{ student.adress }}</td>
+            </tr>
+            <tr>
+                <th>Емейл</th>
+                <td>{{ student.email }}</td>
+            </tr>
+            <tr>
+                <th>Запись создана</th>
+                <td>{{ student.createdAt ? student.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Курс</th>
+                <td>{{ student.course }}</td>
+            </tr>
+            <tr>
+                <th>Номер группы</th>
+                <td>{{ student.numberGroup }}</td>
+            </tr>
+            <tr>
+                <th>Студенческий</th>
+                <td>{{ student.studentId }}</td>
+            </tr>
+            <tr>
+                <th>Фото</th>
+                <td><img src="/web/uploads/student/{{ student.photo }}" width="100" height="100" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('student_index') }}">Назад к списку</a>
+
+    <a href="{{ path('student_edit', {'id': student.id}) }}">Редактировать</a>
+
+    {{ include('student/_delete_form.html.twig') }}
+{% endblock %}

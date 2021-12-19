@@ -1,0 +1,40 @@
+
+c	php:S1192á"NDefine a constant instead of duplicating this literal "console.error" 3 times.(˜Åt
+j	php:S1192Ÿ"ODefine a constant instead of duplicating this literal "monolog.logger" 3 times.(ÿ¦Åøÿÿÿÿ
+Œ	php:S1192Ä"wDefine a constant instead of duplicating this literal "Symfony\\Component\\Security\\Http\\Event\\LogoutEvent" 4 times.(õ´‰
+‚	php:S1192U"aDefine a constant instead of duplicating this literal "doctrine.dbal.default_connection" 3 times.(‘Û†×şÿÿÿÿ8—áùŞÙ/
+f	php:S1192Ò"QDefine a constant instead of duplicating this literal "kernel.exception" 4 times.(ã’ı*
+	php:S1192›"fDefine a constant instead of duplicating this literal "sensio_framework_extra.cache.listener" 4 times.(¼†ôÆûÿÿÿÿ
+k	php:S1192X"ODefine a constant instead of duplicating this literal "routing.loader" 4 times.(Æ“Ñ³8«“õŞÙ/
+y	php:S1192?"XDefine a constant instead of duplicating this literal ".container.private.twig" 3 times.(°ĞØĞıÿÿÿÿ8—áùŞÙ/
+f	php:S1192Ã"PDefine a constant instead of duplicating this literal "kernel.request" 10 times.(ûû
+f	php:S1192º"PDefine a constant instead of duplicating this literal "kernel.response" 9 times.(”É¯ô
+r	php:S1192Ï"\Define a constant instead of duplicating this literal "kernel.controller_arguments" 4 times.(ÁÌò€
+y	php:S1192ı"^Define a constant instead of duplicating this literal "debug.debug_handlers_listener" 3 times.(ˆã±ƒùÿÿÿÿ
+z	php:S1192ù"dDefine a constant instead of duplicating this literal "router.expression_language_provider" 3 times.(„÷¡¬
+t	php:S1192¿"YDefine a constant instead of duplicating this literal "symfony/framework-bundle" 7 times.(Ôë÷Øıÿÿÿÿ
+i	php:S1117Ô"NRename "$parameters" which has the same name as the field declared at line 21.(óÛ¾úÿÿÿÿ
+tphp:S101"[Rename class "App_KernelProdContainer" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(âîÜúûÿÿÿÿ
+o	php:S1192¼"YDefine a constant instead of duplicating this literal "monolog.handler.console" 10 times.(†¾ºü
+l	php:S1192É"VDefine a constant instead of duplicating this literal "kernel.finish_request" 6 times.(Öúöà
+	php:S1448"sClass "App_KernelProdContainer" has 62 methods, which is greater than 20 authorized. Split it into smaller classes.(âîÜúûÿÿÿÿ
+y	php:S1192‡"cDefine a constant instead of duplicating this literal "security.firewall.map.context.main" 4 times.(Áîœí
+Š	php:S1192Ü"oDefine a constant instead of duplicating this literal "framework_extra_bundle.argument_name_convertor" 3 times.(ø´•Æúÿÿÿÿ
+…	php:S1192ó"pDefine a constant instead of duplicating this literal "Symfony\\Component\\Mailer\\Event\\MessageEvent" 3 times.(õ‹‹5
+˜	php:S1192µ"}Define a constant instead of duplicating this literal "Symfony\\Component\\Security\\Http\\Event\\LoginSuccessEvent" 3 times.(ÆË¡¦ùÿÿÿÿ
+™	php:S1192·"~Define a constant instead of duplicating this literal "Symfony\\Component\\Security\\Http\\Event\\CheckPassportEvent" 8 times.(–›¸şÿÿÿÿ
+	php:S1192V"dDefine a constant instead of duplicating this literal "doctrine.orm.default_entity_manager" 3 times.(²ä†B8—áùŞÙ/
+h	php:S1192ä"RDefine a constant instead of duplicating this literal "console.terminate" 3 times.(¯Ì¼ü
+€	php:S1192•"eDefine a constant instead of duplicating this literal "sensio_framework_extra.view.listener" 4 times.(‚¤±½ûÿÿÿÿ
+Œ	php:S1192&"rDefine a constant instead of duplicating this literal ".container.private.security.authorization_checker" 5 times.(Â‹²ªúÿÿÿÿ
+Ÿphp:S138ÿ"„This function "getDefaultParameters" has 213 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(©©¹Áúÿÿÿÿ
+m	php:S1192Ò"WDefine a constant instead of duplicating this literal "monolog.logger.request" 4 times.(Ïùšƒ
+h	php:S1192§"RDefine a constant instead of duplicating this literal "security.firewall" 4 times.(íŠçá
+m	php:S1192ö"WDefine a constant instead of duplicating this literal "router.request_context" 3 times.(øÏ³×
+|	php:S1192"aDefine a constant instead of duplicating this literal "security.untracked_token_storage" 4 times.(•Ìóşÿÿÿÿ
+‚	php:S1192œ"gDefine a constant instead of duplicating this literal "security.authentication.trust_resolver" 4 times.(™’‚Éúÿÿÿÿ
+k	php:S1192ÿ"PDefine a constant instead of duplicating this literal "console.command" 3 times.(†™‰±ûÿÿÿÿ
+}	php:S1192†"bDefine a constant instead of duplicating this literal "security.firewall.map.context.dev" 4 times.(±™Í¸øÿÿÿÿ
+k	php:S1192ğ"UDefine a constant instead of duplicating this literal "monolog.handler.main" 8 times.(ÄÈËà
+m	php:S1192"RDefine a constant instead of duplicating this literal "kernel.controller" 5 times.(ª×ˆ¦şÿÿÿÿ
+	php:S1192'"jDefine a constant instead of duplicating this literal ".container.private.security.token_storage" 7 times.(ìÚìÀ

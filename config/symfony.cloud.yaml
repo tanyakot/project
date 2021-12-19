@@ -1,0 +1,6 @@
+relationships:
+  rabbitmq: "myrabbitmq:rabbitmq"
+
+runtime:
+  extensions:
+    - amqp

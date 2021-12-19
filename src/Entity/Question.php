@@ -46,9 +46,15 @@ class Question
      */
     private $answers;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Tag::class, inversedBy="questions")
+     */
+    private $tags;
+
     public function __construct()
     {
         $this->answers = new ArrayCollection();
+        $this->tags = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -143,5 +149,29 @@ class Question
 //        return $this->answers->filter(function(Answer $answer) {
 //            return $answer->isApproved();
 //        });
+    }
+
+    /**
+     * @return Collection|Tag[]
+     */
+    public function getTags(): Collection
+    {
+        return $this->tags;
+    }
+
+    public function addTag(Tag $tag): self
+    {
+        if (!$this->tags->contains($tag)) {
+            $this->tags[] = $tag;
+        }
+
+        return $this;
+    }
+
+    public function removeTag(Tag $tag): self
+    {
+        $this->tags->removeElement($tag);
+
+        return $this;
     }
 }

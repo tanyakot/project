@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Question;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -19,32 +20,21 @@ class QuestionRepository extends ServiceEntityRepository
         parent::__construct($registry, Question::class);
     }
 
-    // /**
-    //  * @return Question[] Returns an array of Question objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function createAskedOrderedByNewestQueryBuilder() : QueryBuilder
     {
         return $this->createQueryBuilder('q')
-            ->andWhere('q.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('q.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+//            ->andWhere('q.askedAt IS NOT NULL')
+            ->leftJoin('q.tags', 'tag')
+            ->addSelect('tag')
+            ->orderBy('q.askedAt', 'DESC')
+//            ->getQuery()
+//            ->getResult()
+            ;
     }
-    */
+//    private function addIsAskedQueryBuilder(QueryBuilder $qb = null): QueryBuilder
+//    {
+//        return $this->getOrCreateQueryBuilder($qb)
+//            ->andWhere('q.askedAt IS NOT NULL');
+//    }
 
-    /*
-    public function findOneBySomeField($value): ?Question
-    {
-        return $this->createQueryBuilder('q')
-            ->andWhere('q.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }
